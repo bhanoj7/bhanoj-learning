@@ -1,0 +1,6 @@
+[2025-08-06 09:15:27] INFO User login: user_id=123
+[2025-08-06 09:16:02] ERROR Payment failed: txn_id=abc123#/.
+[2025-08-06 09:17:45] INFO Logout: user_id=123
+[2025-08-08 10:01:00] DEBUG Fetching profile: user_id=321
+[2025-08-08 10:02:12] WARNING Slow response: api=/login
+[2025-08-08 10:03:44] ERROR Invalid password for user_id=999
