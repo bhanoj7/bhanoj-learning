@@ -22,3 +22,8 @@
 2025-12-01 23:18:50,265 - INFO - Log entry 197
 2025-12-01 23:18:50,266 - INFO - Log entry 198
 2025-12-01 23:18:50,266 - INFO - Log entry 199
+2025-12-02 23:53:10,200 - INFO - Info message
+2025-12-02 23:53:10,202 - WARNING - Warning message
+2025-12-02 23:53:10,202 - ERROR - Error message
+2025-12-02 23:53:10,202 - CRITICAL - Critical message
+2025-12-02 23:53:10,202 - ERROR - Error occurred: division by zero

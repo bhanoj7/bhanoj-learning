@@ -1,8 +1,8 @@
 import logging
 from logging.handlers import RotatingFileHandler
 
-def get_logger(name: str):
-    logger = logging.getLogger(name)
+def get_logger():
+    logger = logging.getLogger("app_logger")
     logger.setLevel(logging.INFO)
     formatter = logging.Formatter(
         "%(asctime)s - %(levelname)s - %(message)s"
@@ -20,8 +20,3 @@ def get_logger(name: str):
     return logger
 
 
-# Run this file directly to test
-if __name__ == "__main__":
-    logger = get_logger("")
-    for i in range(200):
-        logger.info(f"Log entry {i}")
