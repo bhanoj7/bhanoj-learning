@@ -1,4 +1,5 @@
 from logging_setup import get_logger
+from errors import AppError, ValidationError, DatabaseError
 
 logger = get_logger()
 
@@ -16,3 +17,9 @@ def divide(a, b):
         logger.error(f"Error occurred: {e}")
 
 divide(10, 0)
+
+try:
+    raise ValidationError("Invalid input format.")
+except ValidationError as e:
+    logger.error(f"Validation failed: {e}")
+
