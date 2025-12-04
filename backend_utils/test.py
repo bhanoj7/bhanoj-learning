@@ -1,5 +1,6 @@
-from logging_setup import get_logger
-from errors import AppError, ValidationError, DatabaseError
+from backend_utils.logging_setup import get_logger
+from backend_utils.errors import AppError, ValidationError, DatabaseError
+
 
 logger = get_logger()
 
