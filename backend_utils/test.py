@@ -1,5 +1,6 @@
 from backend_utils.logging_setup import get_logger
 from backend_utils.errors import AppError, ValidationError, DatabaseError
+from backend_utils.json_logging import JsonFormatter, get_json_logger
 
 
 logger = get_logger()
@@ -23,4 +24,7 @@ try:
     raise ValidationError("Invalid input format.")
 except ValidationError as e:
     logger.error(f"Validation failed: {e}")
+
+logger = get_json_logger()
+logger.info("JSON logging working!")
 
