@@ -15,8 +15,8 @@ def get_app_logger():
     handler.setFormatter(formatter)
 
     # Add only once
-    if not logger.handlers:
-        logger.addHandler(handler)
+    #if not logger.handlers:
+    logger.addHandler(handler)
 
     return logger
 
