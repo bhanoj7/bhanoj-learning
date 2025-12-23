@@ -28,3 +28,33 @@
 ### 📌 Status
 - [x] Corrected
 - [ ] Mastered
+
+### Error ID: E-DSA-002
+- Date: Day 38
+- Area: DSA
+- Topic: Sliding Window
+- Problem: Longest Substring Without Repeating Characters
+
+#### ❌ What I did wrong
+- Tried to solve by partial reset / incorrect pointer movement
+- Did not enforce a clear window invariant
+- Forgot that right pointer must pause while duplicates are removed
+
+#### 🧠 Root Cause
+- Sliding window concept not internalized
+- Thinking in terms of “steps” instead of “state invariant”
+
+#### ✅ Correct Concept
+- Maintain a window with all unique characters
+- Use a set to track window content
+- When duplicate appears, shrink from left until valid
+- Only then expand right again
+
+#### 🔁 Action Item
+- Re-solve this problem after 3 days without looking
+- Practice 2 more variable-size sliding window problems
+
+#### 📌 Status
+- [ ] Pending
+- [ ] Revised
+- [ ] Mastered
